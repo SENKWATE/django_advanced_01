@@ -1,0 +1,17 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inventories</title>
+</head>
+<body>
+	{% for i in inventories %}
+		<li>{{i.name}}</li>
+		<li>{{i.store}}</li>
+		<li>{{i.is_empty}}</li>
+		<li>{{i.last_updated}}</li>
+		<br>
+	{% endfor %}
+	
+</body>
+</html>
